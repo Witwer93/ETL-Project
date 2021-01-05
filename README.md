@@ -8,13 +8,13 @@ It took a long time for me to figure out all the bits and pieces that I needed t
 
 Here's the element on the kickstarter page that held the steam store url.
 
-![element used to get to the steam store, steam store was much more consistent than kickstarter](/Screenshots/etl_project_screenshot.png)
+![element used to get to the steam store which was reliable unlike kickstarter](\Screenshots\etl_project_screenshot.png)
 
 Finally I had everything I needed to scrape these webpages. I created a while-loop that would only break when the "view more" element on the kickstarter page was no longer visible. Inside that I created a for loop that would iterate through every steam store url on the given page and save the urls in a list. I then used a for-loop to go through every steam link that I had collected in order to extract the game titles. I used try and except for this, and noticed that a few of the steam links were faulty or required the user to authenticate their age.
 
 This is what that looked like:
 
-![Running this loop took a long time](/Screenshots/etl_project_screenshot3.png)
+![Running this loop took a long time](\Screenshots\etl_project_screenshot3.png)
 
 Thus far I am approaching a place where I will have something that at least meets the requirements for the assignment, unfortunately if you're seeing this on 1/4/2021 I still need a little bit more time to finish the 'Load' portion of the etl process. I will have something to grade by tomorrow night.
 
